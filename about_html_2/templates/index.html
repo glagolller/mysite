@@ -1,0 +1,198 @@
+<!DOCTYPE html> <!-- Определяет тип документа и версию HTML (HTML5) -->
+<html lang="ru"> <!-- Начало HTML-документа, задает язык страницы как русский -->
+<head>
+    <meta charset="UTF-8"> <!-- Устанавливает кодировку документа в UTF-8 для поддержки всех символов -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Устанавливает мета-тег для адаптивного дизайна на мобильных устройствах -->
+    <title>Positivus Landing Page Design (Community)</title> <!-- Устанавливает заголовок страницы, который отображается на вкладке браузера -->
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}"> <!-- Подключает файл стилей (CSS) для оформления страницы -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Предварительное соединение с Google Fonts для ускорения загрузки -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Предварительное соединение с Google Fonts (с использованием кросс-доменных запросов) -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"> <!-- Подключает шрифт Space Grotesk с разными весами -->
+</head>
+<body> <!-- Начало тела документа -->
+    <header> <!-- Начало заголовка страницы -->
+        <div class="nav_bar"> <!-- Контейнер для навигационной панели -->
+            <div class="logo"> <!-- Контейнер для логотипа -->
+                <img src="{{url_for('static',filename='images/logo.svg')}}"> <!-- Вставляет изображение логотипа -->
+            </div>
+            <div class="menu"> <!-- Контейнер для меню навигации -->
+                <ul class="menu-item"> <!-- Ненумерованный список для пунктов меню -->
+                    <li><a href="#">About us</a></li> <!-- Пункт меню "О нас" -->
+                    <li><a href="#">Services</a></li> <!-- Пункт меню "Услуги" -->
+                    <li><a href="#">Use Cases</a></li> <!-- Пункт меню "Случаи использования" -->
+                    <li><a href="#">Pricing</a></li> <!-- Пункт меню "Цены" -->
+                    <li><a href="#">Blog</a></li> <!-- Пункт меню "Блог" -->
+                </ul>
+                <button type="button" class="button">Request a quote</button> <!-- Кнопка "Запросить квоту" -->
+            </div>
+        </div>
+    </header>
+    <main> <!-- Начало основного содержимого страницы -->
+        <!--Первая секция-->
+        <div class="sec1">
+            <div class="text_sec1">
+                <h1 style="font-size: 60px;">Navigating the digital landscape for success</h1>
+                <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+                <button class="button_sec1">Book a consultation</button>
+            </div>
+            <div class="image_sec1">
+                <img src="{{url_for('static',filename='images/Illustration.png')}}">
+            </div>
+        </div>
+        <!--Вторая секция-->
+        <div class="sec2">
+            <div class="images_sec2">
+                <img src="{{url_for('static',filename='images/Company1.png')}}" class="img_sec2">
+                <img src="{{url_for('static',filename='images/Company2.png')}}" class="img_sec2">
+                <img src="{{url_for('static',filename='images/Company3.png')}}" class="img_sec2">
+                <img src="{{url_for('static',filename='images/Company4.png')}}" class="img_sec2">
+                <img src="{{url_for('static',filename='images/Company5.png')}}" class="img_sec2">
+                <img src="{{url_for('static',filename='images/Company6.png')}}" class="img_sec2">
+            </div>
+        </div>
+        <!--Третья секция-->
+        <div class = "long-element">
+            <div class = "label-long-element">
+                <h1>Services</h1>
+            </div>
+            <div class = "text-long-element">
+                <long><p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p></long>
+            </div>
+        </div>
+        <div class="table_with_pics">
+            <div class="line1">
+                <div class="block1">
+                    <div class="t1">
+                        <h3 class="h3_block1" style="margin-bottom: 0; width: 221px; font-size: 30px;">Search engine</h3>
+                        <h3 class="h3_block1" style="margin-top: 0; width: 197px; font-size: 30px;">optimization</h3>
+                        <div class="learn1">
+                            <img src="{{url_for('static',filename='images/Icon1.png')}}">
+                            <p style="margin-left: 10;">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="img1">
+                        <img src="{{url_for('static',filename='images/Illustration1.png')}}">
+                    </div>
+                </div>
+                <div class="block2">
+                    <div class="t1">
+                        <h3 class="h3_block2" style="margin-bottom: 0; width: 220px; font-size: 30px;">Pay-per-click</h3>
+                        <h3 class="h3_block2" style="margin-top: 0; width: 190px; font-size: 30px;">organization</h3>
+                        <div class="learn1">
+                            <img src="{{url_for('static',filename='images/Icon1.png')}}">
+                            <p style="margin-left: 10;">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="img1">
+                        <img src="{{url_for('static',filename='images/Illustration2.svg')}}">
+                    </div>
+                </div>
+            </div>
+            <div class="line2">
+                <div class="block3">
+                    <div class="t1">
+                        <h3 class="h3_block1" style="margin-bottom: 0; width: 197px; font-size: 30px;">Social media</h3>
+                        <h3 class="h3_block1" style="margin-top: 0; width: 161px; font-size: 30px;">marketing</h3>
+                        <div class="learn1">
+                            <img src="{{url_for('static',filename='images/Icon2.png')}}">
+                            <p style="margin-left: 10; color: #FFFFFF;">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="img1">
+                        <img src="{{url_for('static',filename='images/Illustration3.svg')}}">
+                    </div>
+                </div>
+                <div class="block4">
+                    <div class="t1">
+                        <h3 class="h3_block1" style="margin-bottom: 0; width: 90px; font-size: 30px;">Email</h3>
+                        <h3 class="h3_block1" style="margin-top: 0; width: 161px; font-size: 30px;">marketing</h3>
+                        <div class="learn1">
+                            <img src="{{url_for('static',filename='images/Icon1.png')}}">
+                            <p style="margin-left: 10;">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="img1">
+                        <img src="{{url_for('static',filename='images/Illustration4.svg')}}">
+                    </div>
+                </div>
+            </div>
+            <div class="line3">
+                <div class="block5">
+                    <div class="t1">
+                        <h3 class="h3_block1" style="margin-bottom: 0; width: 133px; background-color: #ffffff; font-size: 30px;">Content</h3>
+                        <h3 class="h3_block1" style="margin-top: 0; width: 137px; background-color: #ffffff; font-size: 30px;">creation</h3>
+                        <div class="learn1">
+                            <img src="{{url_for('static',filename='images/Icon1.png')}}">
+                            <p style="margin-left: 10;">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="img1">
+                        <img src="{{url_for('static',filename='images/Illustration5.svg')}}">
+                    </div>
+                </div>
+                <div class="block6">
+                    <div class="t1">
+                        <h3 class="h3_block1" style="margin-bottom: 0; width: 213px; font-size: 30px;">Analitics and</h3>
+                        <h3 class="h3_block1" style="margin-top: 0; width: 138px; font-size: 30px;">Tracking</h3>
+                        <div class="learn1">
+                            <img src="{{url_for('static',filename='images/Icon2.png')}}">
+                            <p style="margin-left: 10; color: #FFFFFF;">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="img1">
+                        <img src="{{url_for('static',filename='images/Illustration5.svg')}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_nav_bar">
+            <div class="footer_nav_bar_menu">
+                <div>
+                    <img src="{{url_for('static',filename='images/logo.svg')}}" class="logo2">
+                </div>
+                <div>
+                    <ul class="menu" id="menu-footer"> <!-- Ненумерованный список для пунктов меню -->
+                        <li><a href="#">About us</a></li> <!-- Пункт меню "О нас" -->
+                        <li><a href="#">Services</a></li> <!-- Пункт меню "Услуги" -->
+                        <li><a href="#">Use Cases</a></li> <!-- Пункт меню "Случаи использования" -->
+                        <li><a href="#">Pricing</a></li> <!-- Пункт меню "Цены" -->
+                        <li><a href="#">Blog</a></li> <!-- Пункт меню "Блог" -->
+                    </ul>
+                </div>
+                <div>
+                    <img src="{{url_for('static',filename='images/s1.svg')}}" class="logo-s">
+                    <img src="{{url_for('static',filename='images/s2.svg')}}" class="logo-s">
+                    <img src="{{url_for('static',filename='images/s3.svg')}}" class="logo=s">
+                </div>
+            </div>
+            <div class="footer_nav_bar_info">
+                <div class="footer_nav_bar_info_left">
+                    <div class="contact-us">
+                        <h4>Contact us:</h4>
+                    </div>
+                    <div class="info">
+                        <p>Email: info@positivus.com</p>
+                        <p>Phone: 555-567-8901</p>
+                        <p id="last-str">Address: 1234 Main St <br>
+                            Moonstone City, Stardust State 12345</p>
+                    </div>
+                </div>
+                <div class="subscription">
+                    <form action="/submit" method="POST" class = "form">
+                        <input type="text" id="textInput" name="textInput" placeholder="Email" required>
+                        <input type="submit" value="Subscribe to news">
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Positivus. All Rights Reserved.</p>
+                    <div class="privat-policy">
+                        <a href="#">Privacy Policy</a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
