@@ -1,0 +1,719 @@
+body {
+    background: #FFFFFF; /* Устанавливает белый фон для страницы */
+    margin-top: 60px;
+    font-family: 'Space Grotesk', sans-serif; /* Устанавливает шрифт для ссылок */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px; /* Устанавливает размер шрифта */
+}
+
+ul {
+    list-style-type: none; /* Убирает маркеры у списков */
+    margin: 0; /* Убирает внешние отступы */
+    padding: 0; /* Убирает внутренние отступы */
+}
+
+p {
+    margin: 0;
+}
+
+/* Label */
+.lbl{
+width: 178px;
+height: 51px;
+}
+
+/* identical to box height */
+
+/*color: #000000;*/
+
+
+/* Inside auto layout */
+.inside_a{
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+h1{
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 51px;
+    color: #000000;
+}
+
+
+
+h4 {
+    font-size: 60px;
+    margin: 0;
+}
+/* Heading & Subheading */
+
+/* Auto layout */
+/*.after {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 100px;
+gap: 40px;
+
+position: absolute;
+width: 1440px;
+height: 51px;
+left: 0px;
+top: 971px;
+}*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 100px;
+}
+
+.table_with_pics{
+    /* Services block */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 1440px;
+height: 1010px;
+left: 0px;
+top: 1102px;
+
+
+}
+.line1{
+    /* Cards section */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 100px;
+gap: 40px;
+
+width: 1440px;
+height: 310px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+.nav_bar {
+    display: flex; /* Использует Flexbox для навигационной панели */
+    flex-direction: row; /* Располагает дочерние элементы в строку */
+    justify-content: space-between; /* Распределяет пространство между дочерними элементами */
+    align-items: center; /* Выравнивает элементы по центру по вертикали */
+    /*padding: 0px 100px; /* Устанавливает внутренние отступы (100px слева и справа) */
+}
+
+.menu {
+    display: flex; /* Использует Flexbox для меню */
+    justify-content: right; /* Выравнивает элементы по центру */
+    align-items: center; /* Выравнивает элементы по центру по вертикали */
+    /*gap: 5%; /* Устанавливает расстояние между дочерними элементами (2%) */
+}
+
+.menu ul {
+    display: flex; /* Использует Flexbox для списка в меню */
+}
+
+.menu li {
+    margin: 0 20px; /* Устанавливает горизонтальные отступы для элементов списка */
+}
+
+.menu a {
+    font-family: 'Space Grotesk', sans-serif; /* Устанавливает шрифт для ссылок */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px; /* Устанавливает размер шрифта */
+    text-decoration: none; /* Убирает подчеркивание у ссылок */
+    color: #000000; /* Устанавливает цвет текста ссылок черным */
+    white-space: nowrap; /* Запрещает перенос текста на новую строку */
+}
+
+.button {
+    box-sizing: border-box; /* Устанавливает расчет размеров элемента с учетом padding и border */
+    display: flex; /* Использует Flexbox для кнопки */
+    align-items: flex-start; /* Выравнивает элементы по верхнему краю кнопки */
+    padding: 20px 35px; /* Устанавливает внутренние отступы (20px сверху и снизу, 35px слева и справа) */
+    border: 1px solid #191A23; /* Устанавливает границу кнопки */
+    border-radius: 14px; /* Устанавливает скругление углов кнопки */
+    font-family: 'Space Grotesk'; /* Устанавливает шрифт для текста кнопки */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px; /* Устанавливает размер шрифта текста кнопки */
+    white-space: nowrap; /* Запрещает перенос текста на новую строку внутри кнопки */
+    color: #000000; /* Устанавливает цвет текста кнопки черным */
+    background: #FFFFFF; /* Устанавливает белый цвет фона кнопки */
+    margin-left: 20px;
+}
+
+.button:hover {
+    background-color: black; /* Изменяет цвет фона на черный при наведении на кнопку */
+    color: white; /* Изменяет цвет текста на белый при наведении */
+}
+
+.button:active {
+    background-color: #1f1f1f; /* Изменяет цвет фона на темный при нажатии на кнопку */
+    transform: scale(0.98); /* Уменьшает размер кнопки при нажатии для эффекта нажатия */
+    border-color: #1f1f1f; /* Изменяет цвет границы на темный при нажатии */
+}
+
+
+.long-element {
+    display: flex; /* Использует Flexbox для навигационной панели */
+    flex-direction: row; /* Располагает дочерние элементы в строку */
+    margin: 140px 100px 80px 100px;
+}
+
+.label-long-element {
+    padding: 0px 7px;
+    background: #B9FF66;
+    border-radius: 7px;
+    margin-right: 40px;
+    width: 178px;
+    height: 51px;
+}
+
+/* At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include: */
+
+.text-long-element {
+    width: 580px;
+}
+
+.text-long-element p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+footer {
+    width: 100%;
+}
+
+.footer_nav_bar {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 60px 50px;
+    margin: 140px 100px 0px 100px;
+    gap: 50px;
+    /* Dark */
+    background: #191A23;
+    border-radius: 45px 45px 0px 0px;
+}
+
+.footer_nav_bar_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo2{
+    width: 180px;
+    height: 29px;
+}
+
+#menu-footer a{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+#menu-footer li {
+    margin: 0 20px; /* Устанавливает горизонтальные отступы для элементов списка */
+}
+
+.logo-s {
+    padding: 0px 8px 0px 8px;
+}
+
+.footer_nav_bar_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_nav_bar_info_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us {
+    display: flex;
+    width: fit-content;
+    padding: 0px 7px;
+    background: #B9FF66;
+    border-radius: 7px;
+    margin-bottom: 27px;
+}
+
+
+.contact-us h4 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.info p {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#last-str {
+    margin-bottom: 0;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 58px 40px;
+    gap: 20px;
+    background: #292A32;
+    border-radius: 14px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="text"] {
+    /* Field */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 22px 35px;
+    gap: 10px;
+
+    background: #292A32;
+    border: 1px solid #FFFFFF;
+    border-radius: 14px;
+
+
+    /* p */
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+    outline: none;
+    margin-right: 20px;
+
+}
+input[type="submit"] {
+    /* Button */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 35px;
+    gap: 10px;
+    /* Green */
+    background: #B9FF66;
+    border-radius: 14px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    text-align: center;
+
+    /* Black */
+    color: #000000;
+    border-width: 0px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff; /* Устанавливает цвет текста ссылок черным */
+    border-top: 1px solid #FFFFFF;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.privat-policy {
+    margin-left: 50px;
+}
+
+.privat-policy a {
+    color: #ffffff; /* Устанавливает цвет текста ссылок черным */
+}
+
+/*section 1*/
+.sec1 {
+    display: flex;
+}
+.button_sec1 {
+    background-color: #000000;
+    color: white;
+    border-radius: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid black;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+.button_sec1:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.text_sec1 {
+    margin: 100px;
+    margin-top: 70px;
+}
+.image_sec1 {
+    margin-top: 70px;
+    margin-right: 100px;
+}
+
+/*section 2*/
+.sec2 {
+    width: 100%;
+    text-align: center;
+}
+.img_sec2 {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/*section 3*/
+.learn1 {
+    display: flex;
+}
+.block1 {
+    /* Card */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 50px;
+gap: 77px;
+
+width: 600px;
+height: 310px;
+
+/* Grey */
+background: #F3F3F3;
+/* Dark */
+border: 1px solid #191A23;
+box-shadow: 0px 5px 0px #191A23;
+border-radius: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.block2{
+    /* Card */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 50px;
+gap: 77px;
+
+width: 600px;
+height: 310px;
+
+/* Green */
+background: #B9FF66;
+/* Dark */
+border: 1px solid #191A23;
+box-shadow: 0px 5px 0px #191A23;
+border-radius: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.block3{
+    /* Card */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 50px;
+gap: 77px;
+
+width: 600px;
+height: 310px;
+
+/* Green */
+background: #191a23;
+/* Dark */
+border: 1px solid #191A23;
+box-shadow: 0px 5px 0px #191a23;
+border-radius: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.block4{
+    /* Card */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 50px;
+gap: 77px;
+
+width: 600px;
+height: 310px;
+
+/* Green */
+background: #ffffff;
+/* Dark */
+border: 1px solid #191A23;
+box-shadow: 0px 5px 0px #191A23;
+border-radius: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.block5{
+    /* Card */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 50px;
+gap: 77px;
+
+width: 600px;
+height: 310px;
+
+/* Green */
+background: #B9FF66;
+/* Dark */
+border: 1px solid #191A23;
+box-shadow: 0px 5px 0px #191A23;
+border-radius: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.block6{
+/* Card */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 50px;
+gap: 77px;
+
+width: 600px;
+height: 310px;
+
+/* Dark */
+background: #191A23;
+/* Dark */
+border: 1px solid #191A23;
+box-shadow: 0px 5px 0px #191A23;
+border-radius: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.h3_block1 {
+    background-color: #B9FF66; 
+    border-radius: 10px;
+    text-align: center;
+}
+.h3_block2 {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    text-align: center;
+}
+.long{
+    width: 580px;
+    height: 41px;
+}
+.line2{
+    /* Cards section */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 100px;
+gap: 40px;
+
+width: 1440px;
+height: 310px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.line3{
+    /* Cards section */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 100px;
+gap: 40px;
+
+width: 1440px;
+height: 310px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+} 
+
+/* Label */
+
+/* Auto layout */
+
+/*width: 221px;
+width: 197px;
+
+width: 209px;
+width: 178px;
+
+width: 197px;
+width: 161px;
+
+width: 90px;
+width: 161px;
+
+width: 133px;
+width: 137px;
+
+width: 213px;
+width: 138px;
+
+/* Label */
+
+
+.h3 {
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 38px;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
